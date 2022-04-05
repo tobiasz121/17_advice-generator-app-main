@@ -1,4 +1,3 @@
-// import snackbar from "snackbar"
 const pic = document.querySelector('button')
 const adviceNr = document.querySelector('h1')
 const adviceText = document.querySelector('blockquote')
