@@ -88,6 +88,14 @@ body {
     text-align: center;
 }
 
+@media (max-width:600px){
+    .container {
+        max-width:90%;
+        min-width: 300px;
+    }
+    
+}
+
 .flow-space--big {
     --flow-space: 2rem
 }
@@ -122,8 +130,7 @@ body {
 /*  COMPONENTS       */
 /*                   */
 
-.container--advice {
-    max-width: 34rem;
+.container--advice {    
     border-radius: 2rem;
 }
 
@@ -135,8 +142,15 @@ body {
     border-radius: 50%;
     bottom: 0;
     transform: translateX(-50%) translateY(50%);
-    margin: 0;      
+    margin: 0;
+         
 
+}
+
+.circle-dice:hover {        
+    cursor: pointer;
+    box-shadow:
+    0 0 50px 2px hsl( var(--clr-green))
 }
 
 .circle-dice > img{

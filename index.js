@@ -1,9 +1,12 @@
+import snackbar from "snackbar"
 const pic = document.querySelector('button')
 const adviceNr = document.querySelector('h1')
 const adviceText = document.querySelector('blockquote')
 
 pic.addEventListener('click', event => {    
     const response = fetch('https://api.adviceslip.com/advice').then(response => {
+        snackbar.show('Received data successfully')
+        // snackbar.duration(2000)
         return response.json()
     })
     .then(data => {

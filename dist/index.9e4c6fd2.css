@@ -1,0 +1,155 @@
+:root {
+  --clr-cyan: 193, 38%, 86%;
+  --clr-green: 150, 100%, 66%;
+  --clr-grayblue: 217, 19%, 38%;
+  --clr-darkgrayblue: 217, 19%, 24%;
+  --clr-darkblue: 18, 23%, 16%;
+  --fs-400: 1rem;
+  --fs-600: 1.75rem;
+  --ff-manrope: "Manrope", sans-serif;
+  --fw-bold: 800;
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  border: none;
+  padding: 0;
+}
+
+body {
+  font-family: var(--ff-manrope);
+  font-size: var(--fs-400);
+  color: hsl(var(--clr-green) );
+  background-color: hsl(var(--clr-darkblue) );
+  min-height: 100vh;
+  place-items: center;
+  line-height: 1.5;
+  display: grid;
+  overflow-x: hidden;
+}
+
+.flex {
+  gap: var(--gap, 1rem);
+  display: flex;
+}
+
+.flow > * {
+  margin-top: var(--flow-space, 1rem);
+}
+
+.grid {
+  gap: var(--flow-space, 1rem);
+  display: grid;
+}
+
+.container {
+  max-width: 34rem;
+  text-align: center;
+  margin-inline: auto;
+  padding-inline: clamp(2rem, 7vw, 3rem);
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 90%;
+    min-width: 300px;
+  }
+}
+
+.flow-space--big {
+  --flow-space: 2rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.bg-darkblue {
+  background-color: hsl(var(--clr-darkblue) );
+}
+
+.bg-darkgreyblue {
+  background-color: hsl(var(--clr-darkgrayblue) );
+}
+
+.bg-green {
+  background-color: hsl(var(--clr-green) );
+}
+
+.text-green {
+  color: hsl(var(--clr-green) );
+}
+
+.text-light {
+  color: hsl(var(--clr-cyan) );
+}
+
+.ff-serif {
+  font-family: var(--ff-manrope);
+}
+
+.letter-spacing-1 {
+  letter-spacing: 4.75px;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 2.7px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.fs-600 {
+  font-size: var(--fs-600);
+}
+
+.fs-400 {
+  font-size: var(--fs-400);
+}
+
+.fw-b {
+  font-weight: var(--fw-bold);
+}
+
+.container--advice {
+  border-radius: 2rem;
+}
+
+.circle-dice {
+  background-color: hsl(var(--clr-green) );
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin: 0;
+  display: inline-grid;
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%)translateY(50%);
+}
+
+.circle-dice:hover {
+  cursor: pointer;
+  box-shadow: 0 0 50px 2px hsl( var(--clr-green) );
+}
+
+.circle-dice > img {
+  padding: 1.5rem;
+}
+
+picture {
+  padding-bottom: 5rem;
+}
+
+picture > img {
+  margin-inline: auto;
+}
+
+/*# sourceMappingURL=index.9e4c6fd2.css.map */
